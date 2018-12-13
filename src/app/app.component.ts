@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'visitante';
+
+  canLogin: boolean = false;
+
+callingComponent(callingCpt){
+  this.canLogin = callingCpt;
+}
 }
